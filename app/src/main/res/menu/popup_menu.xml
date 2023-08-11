@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_item_hi"
+        android:title="Don't Use ad Blocker if you want to download on this page keep it switched Off" />
+</menu>

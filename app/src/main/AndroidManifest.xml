@@ -1,0 +1,57 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.Moviecreedfull.moviecreedfull1">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+
+
+    <!-- Other manifest elements and configurations -->
+
+    <!-- Required permissions for downloading movies -->
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- Additional permissions you may need depending on app features -->
+    <!-- E.g., if you plan to use network state for download management -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- E.g., if you plan to notify users using push notifications -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- Add any other permissions as required for your specific app functionality -->
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/dream1"
+        android:label="Moviecreed1.0"
+        android:roundIcon="@drawable/dream1"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.App.Starting"
+        android:networkSecurityConfig="@xml/network_security_config"
+
+        tools:targetApi="31">
+
+
+
+
+        <activity android:name=".LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.App.Starting">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity" />
+
+    </application>
+
+</manifest>

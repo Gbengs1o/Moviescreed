@@ -1,0 +1,86 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Progress Bar -->
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:progressTint="#0707F8"
+        android:background="@color/black"
+        android:progress="0"
+        android:visibility="gone" />
+
+    <!-- Swipe Refresh Layout with WebView -->
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/fab_container"
+        android:layout_below="@+id/progress_bar">
+
+        <WebView
+            android:id="@+id/web_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <!-- Floating Action Buttons -->
+    <LinearLayout
+        android:id="@+id/fab_container"
+        android:layout_width="401dp"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="?android:attr/colorActivatedHighlight"
+        android:backgroundTint="#0B0500"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_1"
+            android:layout_width="41dp"
+            android:layout_height="42dp"
+            android:layout_margin="8dp"
+
+            android:src="@android:drawable/ic_input_delete"
+            app:backgroundTint="#02FFFFFF" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_3"
+            android:layout_width="41dp"
+            android:layout_height="42dp"
+            android:layout_margin="8dp"
+            android:rotationX="-3"
+            android:src="@android:drawable/ic_dialog_dialer"
+            app:backgroundTint="#17040404"
+            tools:ignore="MissingClass" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_4"
+            android:layout_width="41dp"
+            android:layout_height="42dp"
+            android:layout_margin="8dp"
+            android:src="@android:drawable/ic_menu_search"
+            app:backgroundTint="#07FFFFFF" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_2"
+            android:layout_width="41dp"
+            android:layout_height="42dp"
+            android:layout_margin="8dp"
+            android:src="@android:drawable/ic_menu_set_as"
+            app:backgroundTint="#00FFFFFF" />
+
+    </LinearLayout>
+
+</RelativeLayout>

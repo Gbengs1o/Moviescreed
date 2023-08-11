@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "773946177705",
+    "project_id": "moviecreedfull1",
+    "storage_bucket": "moviecreedfull1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:773946177705:android:6df3b1b1d4b9b4fcd551b8",
+        "android_client_info": {
+          "package_name": "com.Moviecreedfull.moviecreedfull1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "773946177705-melai7e0n1dvgfs07qg053j4duvlm79r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjl3FGK1WRWZCT6xq0Ye_eRBkDdn8qOA8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "773946177705-melai7e0n1dvgfs07qg053j4duvlm79r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
